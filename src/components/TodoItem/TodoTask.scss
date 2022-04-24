@@ -1,0 +1,58 @@
+.to-do {
+
+  &__task {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 12px 45px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+
+    &:last-child {
+      margin-bottom: 12px;
+    }
+
+    &__content {
+      word-break: break-word;
+    }
+
+    &-checkbox {
+      position: absolute;
+      left: 10px;
+      margin: 0;
+      padding: 0;
+      width: 21px;
+      height: 21px;
+      outline: 1px solid #998899;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      appearance: none;
+      cursor: pointer;
+
+      &:checked {
+        background-color: #c4c4c4;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      top: 7px;
+      right: 6px;
+      width: 25px;
+      height: 25px;
+      background-color: transparent;
+      padding: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 4px;
+        top: 3px;
+        background-image: url(./images/close.svg);
+        background-size: cover;
+        height: 16px;
+        width: 17px;
+      }
+    }
+  }
+
+}
